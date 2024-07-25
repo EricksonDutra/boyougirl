@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revelação do Sexo do Bebê</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="video-container">
+        <video id="reveal-video" controls playsinline controls autoplay>
+            <source src="video.mp4" type="video/mp4"> 
+            Seu navegador não suporta a tag de vídeo.
+        </video>
+    </div>
+    <div id="choice-container" style="display:none;">
+        <h1>Menino ou Menina?</h1>
+        <div class="choice">
+            <img src="boy.jpg" alt="Menino" id="boy-choice">
+            <img src="girl.jpg" alt="Menina" id="girl-choice">
+        </div>
+    </div>
+    <div id="result-container" style="display:none;">
+        <h1 id="result-message"></h1>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

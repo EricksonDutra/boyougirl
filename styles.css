@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-image: url('./imagem.png');
+    object-fit: cover;
+}
+
+#video-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f0f0;
+    position: relative;
+}
+
+#reveal-video {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+#choice-container, #result-container {
+    margin-top: 20px;
+}
+
+.choice {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.choice img {
+    width: 200px;
+    cursor: pointer;
+    border: 5px solid transparent;
+    border-radius: 10px;
+    transition: transform 0.3s, border 0.3s;
+}
+
+.choice img:hover {
+    transform: scale(1.1);
+    border-color: #ff69b4;
+}
+
+#boy-choice {
+    border-color: #00f;
+}
+
+#girl-choice {
+    border-color: #ff69b4;
+}
+
+@media (max-width: 768px) {
+    .choice img {
+        width: 150px;
+    }
+}
+
+@media (max-width: 480px) {
+    .choice img {
+        width: 100px;
+    }
+}
+
+#result-message {
+    font-size: 3em;
+    color: #00f;
+    background-color:#f0f0f08b;
+    width: 60%;
+    margin: 0 auto;
+}
